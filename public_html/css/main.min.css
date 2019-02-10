@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+body {
+    width: 100%;
+    background: #fff url(../img/bg/body_bg.jpg) no-repeat fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    color: #f1f1e3;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    line-height: 1em
+}
+
+.h__title {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 22px;
+    color: #0157af
+}
+
+header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #00000090
+}
+
+header a {
+    color: #f1f1e3;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+.header__title {
+    padding-top: 10px;
+    text-align: center
+}
+
+.title__text {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1.2em
+}
+
+.region_text {
+    font-size: 24px
+}
+
+.district_text {
+    font-size: 20px
+}
+
+.village_text {
+    font-size: 18px
+}
+
+.header__social {
+    padding-top: 15px;
+    text-align: center
+}
+
+.header__social_text {
+    font-size: 24px
+}
+
+.header__social a {
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #f1f1e3;
+    font-size: 32px;
+    transition: all .3s linear
+}
+
+.fa{
+    transition: all .2s linear;
+}
+
+.fa-facebook-official:hover {
+    color: #4867aa
+}
+
+.fa-youtube:hover{
+    color: #ff0000;
+}
+
+.fa-telegram:hover{
+    color: #5682a3;
+}
+
+.header__menu {
+    width: 80%;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(180deg, #fee16c, #fdbd39);
+    border-radius: 8px
+}
+
+.header__menu ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none
+}
+
+.header__menu ul .menu__item {
+    width: 100%
+}
+
+.header__menu ul .menu__item .item__link {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #04167e
+}
+
+.main {
+    width: 80%;
+    min-height: 100vh;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 30px;
+    background: hsla(0, 0%, 98%, .8)
+}
+
+.nav__right {
+    margin: 15px
+}
+
+.nav__title {
+    background-color: #d0ebfe;
+    border-radius: 5px;
+    border: 2px solid #6c757d;
+    margin-bottom: 20px
+}
+
+.nav__title:hover {
+    background-color: #d6e1fe
+}
+
+.nav__title div {
+    cursor: pointer;
+    padding: 7px;
+    color: #0157af;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.nav__title .menu__item {
+    background-color: #fff;
+    text-align: center;
+    border-top: 1px solid #6c757d;
+    transition: all 1.4s ease
+}
+
+.nav__title .menu__item:hover {
+    background-image: linear-gradient(180deg, #fee16c, #fdbd39);
+    color: #fff
+}
+
+.nav__title .item__link {
+    display: block;
+    padding: 10px 0;
+    color: #337ab7
+}
+
+footer {
+    background-color: #091f34;
+    text-align: center
+}
+
+.footer {
+    width: 80%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.footer p {
+    padding: 5px 0
+}
+
+.article {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    color: #000
+}
+
+.article__news {
+    background-color: #f1f1f1;
+    padding: 10px
+}
+
+.article__img {
+    width: 100%;
+    margin-top: 20px
+}
+
+.article__img img {
+    width: 100%;
+    box-sizing: border-box
+}
+
+.article__title {
+    padding: 10px 0;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    color: #04167e
+}
+
+.article__text {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.2
+}
+
+.article__text, .profile {
+    text-indent: 25px;
+    text-align: justify
+}
+
+.profile {
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 1.3;
+    background-color: #fff;
+    margin: 15px 15px 15px -15px;
+    color: #1a1a1a
+}
+
+.profile__img {
+    padding-top: 10px
+}
+
+.profile__img img {
+    display: block;
+    margin: 15px auto;
+    width: 375px
+}
+
+.profile__text {
+    margin-bottom: 15px
+}
+
+.thumb img {
+    width: 100%;
+    height: 150px;
+    filter: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 5px
+}
+
+.thumb img:hover {
+    filter: grayscale(1)
+}
+
+.thumb {
+    margin-right: -10px
+}
+
+.contact {
+    height: 100%;
+    background-color: #fff;
+    margin: 15px 15px 0 -15px;
+    color: #1a1a1a
+}
+
+.contact__our-address {
+    padding-bottom: 15px;
+    font-size: 18px;
+    padding-left: 15px;
+    line-height: 1.2
+}
+
+.contact__img img {
+    width: 150px;
+    margin-top: -20px;
+    box-sizing: border-box
+}
+
+.contact__map #map {
+    width: 100%;
+    height: 470px
+}
+
+hr {
+    height: 7px;
+    border: 0;
+    background: #0157af75
+}
+
+.houseOfCulture__img {
+    width: 420px;
+    margin: 0 auto
+}
+
+.houseOfCulture__img img {
+    width: 100%;
+    box-sizing: border-box
+}
+
+.slider {
+    margin: 10px 10px 10px -20px
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 1
+}
+
+.slick-next {
+    right: 10px;
+    z-index: 1
+}
+
+.tourism {
+    height: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 10px;
+    color: #000
+}
+
+.tourism, .tourism__img {
+    width: 100%
+}
+
+.tourism__img img {
+    width: 100%;
+    box-sizing: border-box
+}
+
+.tourism__text {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    color: #0157af;
+    text-align: center;
+    font-size: 22px
+}
+
+.tourism__link {
+    margin-left: 15px;
+    border: 2px solid #0157af;
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: #0157af;
+    transition: all .4s linear
+}
+
+.tourism__link:hover {
+    background-color: #0157af;
+    color: #fff
+}
+
+@media screen and (max-device-width: 320px) {
+    .tourism__text p{
+        display: flex;
+        flex-direction: column;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-device-width: 576px) {
+    .tourism__text p{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-device-width: 768px) {
+    .tourism__text {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-device-width: 992px) {
+    .tourism__text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-device-width: 992px) {
+    .tourism__text {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (min-device-width: 1200px) {
+    .tourism__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-device-width: 1355px) {
+    .tourism__text {
+        font-size: 18px;
+    }
+}
+
+@media (min-device-width: 1585px) {
+    .tourism__text {
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
