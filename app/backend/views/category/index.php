@@ -7,7 +7,6 @@ use yii\widgets\Pjax;
 /* @var $searchModel common\models\CategorySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Розділи сайту';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="category-index">
@@ -24,6 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'tableOptions' => [
+                'id'=>false,
             'class' => 'table table-striped table-bordered'
         ],
         'columns' => [

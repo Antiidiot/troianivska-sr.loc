@@ -5,14 +5,13 @@ namespace backend\controllers;
 use Yii;
 use common\models\Category;
 use common\models\CategorySearch;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
  * CategoryController implements the CRUD actions for Category model.
  */
-class CategoryController extends Controller
+class CategoryController extends SiteController
 {
     /**
      * {@inheritdoc}
@@ -35,8 +34,10 @@ class CategoryController extends Controller
      */
     public function actionIndex()
     {
+        $this->setMeta('Адмінка | Розділи сайту');
         $searchModel = new CategorySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
 
         return $this->render('index', [
             'searchModel' => $searchModel,

@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    background-color: darkgoldenrod;
+    color: #333333;
 }
 
 .wrap {
@@ -12,14 +12,19 @@ body {
 }
 
 .wrap > .container {
-    padding: 70px 15px 20px;
+    padding: 15px 15px 20px;
+}
+
+.navbar {
+    border-radius: 0;
 }
 
 .footer {
     height: 60px;
-    background-color: #f5f5f5;
+    background-color: #337ab7;
     border-top: 1px solid #ddd;
     padding-top: 20px;
+    color: #f1f1e3;
 }
 
 .jumbotron {
@@ -100,15 +105,7 @@ a.desc:after {
 .nav li > form > button.logout {
     padding: 15px;
     border: none;
-}
-
-@media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
-        text-align: left;
-        width: 100%;
-        padding: 10px 15px;
-    }
+    color: #f1f1e3;
 }
 
 .nav > li > form > button.logout:focus,
@@ -121,9 +118,39 @@ a.desc:after {
 }
 
 .blog-masthead{
-    background: #2b2b2b51;
+    background: #337ab7;
+}
+
+.nav a, .navbar-brand {
+    color: #f1f1e3;
+}
+
+.nav a:hover{
+    color: #337ab7;
+}
+
+.breadcrumb{
+    background: #337ab7;
+}
+
+.breadcrumb > li > a{
+    color: #f1f1e3;
+}
+
+.breadcrumb .active{
+    color: #090504;
 }
 
 .summary{
     display: none;
 }
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
