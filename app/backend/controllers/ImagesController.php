@@ -94,6 +94,11 @@ class ImagesController extends SiteController
     {
         $model = $this->findModel($id);
 
+        if (Yii::$app->request->isPost) {
+            $fileImg = UploadedFile::getInstance($model, 'image');
+            if($fileImg) $model->loadImg($fileImg);
+        }
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }

@@ -66,7 +66,7 @@ class Posts extends ActiveRecord
             'content' => 'Текст статті',
             'status' => 'Статус: опублікована | не опублікована',
             'category_id' => 'Розділ статті',
-            'images_id' => 'Назва картинки',
+            'images_id' => 'Картинки',
         ];
     }
 
@@ -75,7 +75,7 @@ class Posts extends ActiveRecord
      */
     public function getImage()
     {
-        return ($this->images->alias) ? '/img/uploads/'.$this->images->alias : '/img/uploads/photo.png';
+        return (isset($this->images->alias)) ? '/img/uploads/'.$this->images->alias : '/img/uploads/no_photo.png';
     }
 
 
